@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Switzer";
+  src: url("../fonts/Switzer-Variable.woff2") format("woff2");
+  font-weight: 100 900; /* variable font supports range */
+  font-style: normal;
+}
+:root {
+  --bg: #53C1AC;
+  --fg: #f9f1f1;
+  --muted: #f9f1f1;
+  --accent: #ffffff;
+}
+* { box-sizing: border-box; }
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Switzer", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--fg);
+  background: var(--bg);
+  line-height: 1.6;
+}
+.center-screen {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  gap: 1.25rem;
+  padding: 2rem;
+  text-align: center;
+}
+.logo {
+  max-width: 520px;
+  width: clamp(160px, 40vw, 520px);
+  height: auto;
+  display: block;
+}
+.logo.small { width: 160px; }
+.nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+  font-family: "Switzer", sans-serif;
+}
+.nav a:hover { text-decoration: underline; }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.breadcrumb { color: var(--accent); text-decoration: none; }
+.breadcrumb:hover { text-decoration: underline; }
+.button {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  text-decoration: none;
+  color: var(--fg);
+}
+/* center text */
+main.container {
+  min-height: 50vh;         /* take up full viewport height */
+  display: flex;             /* use flexbox */
+  flex-direction: column;    /* stack items vertically */
+  justify-content: center;   /* center vertically */
+  align-items: center;       /* center horizontally */
+  text-align: center;        /* center the text */
+  gap: 1rem;                 /* space between items */
+}
+main.container a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;   /* space inside the button */
+  border-radius: 0.5rem;     /* rounded corners */
+  background: var(--accent); /* use your accent color */
+  color: var(--bg);          /* text color (contrast with background) */
+  text-decoration: none;     /* remove underline */
+  font-weight: 600;          /* bold text */
+  transition: background 0.3s ease; /* smooth hover effect */
+}
+
+main.container a:hover {
+  background: #434143; /* slightly darker on hover */
+}
+/* Animated gradient background */
+body {
+  background: linear-gradient(120deg, #53C1AC, #6ee7b7, #93c5fd);
+  background-size: 300% 300%;
+  animation: bg-pan 5s ease infinite;
+}
+
+@keyframes bg-pan {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.starry {
+  background: #ffffff url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-size: cover;
+  animation: twinkle 10s infinite alternate;
+}
+@keyframes twinkle {
+  from { background-position: 0 0; }
+  to   { background-position: 100px 100px; }
+}

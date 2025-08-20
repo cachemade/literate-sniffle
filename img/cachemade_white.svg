@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 258.54 58.51">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: DotMatrix, 'Dot Matrix';
+      }
+
+      .cls-1, .cls-2 {
+        fill: #f9f1f1;
+        font-size: 52.81px;
+      }
+
+      .cls-2 {
+        font-family: SwitzerVariable-Regular, 'Switzer Variable';
+        font-variation-settings: 'wght' 400;
+      }
+
+      .cls-3 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.11em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <text class="cls-1" transform="translate(0 46.21)"><tspan x="0" y="0">CACHE</tspan></text>
+    <text class="cls-2" transform="translate(125.51 46.21)"><tspan class="cls-3" x="0" y="0">MAD</tspan><tspan class="cls-4" x="102.56" y="0">E</tspan></text>
+  </g>
+</svg>
